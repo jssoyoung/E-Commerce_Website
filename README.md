@@ -4,7 +4,7 @@
 
 This project is created to 
 
-Here is the link to the github for this project: 
+Here is the link to the github for this project: https://github.com/jssoyoung/E-Commerce_Website
 
 Here is the link to the website demonstration video: 
 
