@@ -19,8 +19,7 @@ router.get('/:id', async (req, res) => {
   // be sure to include its associated Products
   try {
     const categoryData = await Category.findByPk(req.params.id, {
-      // TODO correct?
-      include: [{ model: Category, through: Product, as: 'product_routes' }]
+      include: [Product]
     });
 
     if (!categoryData) {
@@ -34,7 +33,6 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-router.post('/', (req, res) => {
   // create a new category
   router.post('/', async (req, res) => {
     try {
@@ -44,12 +42,11 @@ router.post('/', (req, res) => {
       res.status(400).json(err);
     }
   });
-});
 
 router.put('/:id', async(req, res) => {
   // update a category by its `id` value
  try {
-  const categoryData = await Category.update(req.body);
+  const categoryData = await Category.update(req.body, {where: {id:req.params.id}});
   res.status(200).json(categoryData);
     } catch (err) {
       res.status(400).json(err);
