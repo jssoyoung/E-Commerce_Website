@@ -6,7 +6,7 @@ This project is created to
 
 Here is the link to the github for this project: https://github.com/jssoyoung/E-Commerce_Website
 
-Here is the link to the website demonstration video: 
+Here is the link to the website demonstration video: https://drive.google.com/file/d/1GRq-YZsRzKppceHHctsn3YwREf7f5IeM/view
 
 ## Installation
 
